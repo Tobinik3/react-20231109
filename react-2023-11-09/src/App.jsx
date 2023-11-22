@@ -1,4 +1,4 @@
-import {RestaurantsPage} from "./pages/Restaurants-page/component.jsx";
+import {RestaurantsPage} from "./pages/RestaurantsPage/component.jsx";
 
 export const App = ({restaurants}) => {
     return (

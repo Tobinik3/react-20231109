@@ -1,23 +1,18 @@
+import {Dish} from "../Dish/component.jsx";
+import {Reviews} from "../Reviews/component.jsx";
+import {Menu} from "../Menu/component.jsx";
+
 export const Restaurant = ({restaurant}) => {
+
+    if (!restaurant) {
+        return null;
+    }
+
     return (
         <div>
-            {restaurant.name}
-            <h3>Меню</h3>
-            <ul>
-                {restaurant.menu.map(menuItem => (
-                    <li key={menuItem.id}>
-                        {menuItem.name}
-                    </li>
-                ))}
-            </ul>
-            <h3>Отзывы</h3>
-            <ul>
-                {restaurant.reviews.map(reviewItem => (
-                    <li key={reviewItem.id}>
-                        {reviewItem.text}
-                    </li>
-                ))}
-            </ul>
+            <h2>{restaurant.name}</h2>
+            <Menu restaurant={restaurant}/>
+            <Reviews restaurant={restaurant}/>
         </div>
     );
 }
