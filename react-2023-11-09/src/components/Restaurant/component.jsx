@@ -1,4 +1,3 @@
-import {Dish} from "../Dish/component.jsx";
 import {Reviews} from "../Reviews/component.jsx";
 import {Menu} from "../Menu/component.jsx";
 
