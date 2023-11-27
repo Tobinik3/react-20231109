@@ -1,23 +1,13 @@
 import {useState} from "react";
 
-export const Counter = () => {
-    const [count, setCount] = useState(0);
+export const Counter = ({onPlus, onMinus, count}) => {
 
-    const handleCounterPlus = () => {
-        if (count === 5) return null;
-        setCount(count + 1);
-    };
-
-    const handleCounterMinus = () => {
-        if (count === 0) return null;
-        setCount(count - 1);
-    }
 
     return (
         <div>
-            <button onClick={handleCounterMinus}>-</button>
+            <button onClick={onMinus}>-</button>
             <span>{count}</span>
-            <button onClick={handleCounterPlus}>+</button>
+            <button onClick={onPlus}>+</button>
         </div>
     );
 }
