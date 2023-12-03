@@ -1,5 +1,7 @@
-import {Counter} from "../Counter/component.jsx";
 import {useState} from "react";
+import {Counter} from "../Counter/component.jsx";
+import styles from "./styles.module.css";
+
 
 export const Dish = ({children}) => {
     const [count, setCount] = useState(0);
@@ -14,9 +16,9 @@ export const Dish = ({children}) => {
         setCount(count - 1);
     }
     return (
-        <div>
+        <div className={styles.dish}>
             <span>{children}</span>
-            <Counter onPlus={handleCounterPlus} onMinus={handleCounterMinus} count={count}/>
+            <Counter onPlus={handleCounterPlus} onMinus={handleCounterMinus} count={count} className={styles.counter}/>
         </div>
     );
 }
