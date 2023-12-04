@@ -1,0 +1,9 @@
+.reviews {
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+.review {
+    margin-bottom: 5px;
+}

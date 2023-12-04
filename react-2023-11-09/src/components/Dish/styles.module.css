@@ -1,0 +1,8 @@
+.dish {
+    display: flex;
+}
+
+.counter {
+    margin-right: 50px;
+    margin-left: auto;
+}
