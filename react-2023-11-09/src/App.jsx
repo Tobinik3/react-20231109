@@ -1,7 +1,10 @@
 import {RestaurantsPage} from "./pages/RestaurantsPage/component.jsx";
+import {Layout} from "./components/Layout/component.jsx";
 
 export const App = ({restaurants}) => {
     return (
-        <RestaurantsPage restaurants={restaurants}/>
+        <Layout>
+            <RestaurantsPage restaurants={restaurants}/>
+        </Layout>
     );
 }

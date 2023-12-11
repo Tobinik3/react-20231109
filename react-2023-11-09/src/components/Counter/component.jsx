@@ -1,19 +1,20 @@
 import styles from "./styles.module.css";
+import {Button} from "../Button/component.jsx";
 
 export const Counter = ({onPlus, onMinus, count, className}) => {
 
 
     return (
         <div className={`${styles.counter} ${className}`}>
-            <button onClick={onMinus} className={styles.button}>
+            <Button onClick={onMinus} className={styles.button}>
                 <span className={styles.icon}>
                     -
                 </span>
-            </button>
+            </Button>
             <span>{count}</span>
-            <button onClick={onPlus} className={styles.button}>
+            <Button onClick={onPlus} className={styles.button}>
                 <span className={styles.icon}>+</span>
-            </button>
+            </Button>
         </div>
     );
 }
