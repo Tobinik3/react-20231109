@@ -1,0 +1,9 @@
+.light {
+    background-color: gray;
+    color: white;
+}
+
+.dark {
+    background-color: coral;
+    color: black;
+}
